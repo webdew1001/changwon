@@ -424,7 +424,107 @@ div.intro .emailup-info p {
     line-height: 1.3;
     word-break: keep-all;
 }
-
+/* 평면도 2025.05.15 */
+.floor_plan {}
+.floor_plan .tab_menu { 
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.floor_plan .tab_menu li {
+    width: calc(100% / 6);
+    height: 60px;
+    text-align: center;
+    border-top: 1px solid #E8E8E8;
+    border-left: 1px solid #E8E8E8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.floor_plan .tab_menu li:nth-child(6n) {
+    border-right: 1px solid #E8E8E8;
+}
+ 
+.floor_plan .tab_menu li:nth-child(6) ~ li{
+    border-bottom: 1px solid #E8E8E8;
+}
+.floor_plan .tab_menu li.active {
+    background-color: #151539;
+    color: #fff;
+}
+.floor_plan  .floor_plan_title {
+    display: flex;
+    align-items: flex-end; 
+}
+.floor_plan .floor_plan_title h4 {
+    font-size: 80px;
+    font-weight: 700;
+}
+.floor_plan .floor_plan_title p {
+    margin-bottom: 8px;
+    font-size: 28px;
+    margin-left: 20px;
+    color: #464646;
+}
+.floor_plan_wrap {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+.floor_plan_wrap .floor_info {
+    width: 400px;
+}
+.floor_plan .floor_plan_wrap .floor {
+    /* width: 40%; */
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    /* align-items: flex-start; */
+    row-gap: 32px;
+    margin-top: 60px;
+}
+.floor_plan .floor_plan_wrap .floor ul {
+    display: flex;
+    gap: 8px;
+    border-bottom: 1px solid #E8E8E8;
+    padding-bottom: 20px;
+}
+.floor_plan .floor_plan_wrap .floor ul li:first-child {
+    width: 120px;
+}
+.floor_plan .floor_plan_wrap .floor ul li {
+    font-size: 18px;
+}
+.floor_plan .floor_plan_wrap .floor ul li strong {
+    width: 110px;
+    display: inline-block;
+    margin-right: 20px;
+}
+.floor_plan .floor_plan_wrap .floor ul li strong::after {
+    content: ' m²';
+}
+.floor_plan .floor_plan_wrap .floor_pan_image {
+    width: calc(100% - 600px);
+    /* height: 80vh; */
+    border: 1px solid #E8E8E8;
+    margin: 0;
+    text-align: center;
+    padding: 50px 0;
+    
+}
+.floor_plan .floor_plan_wrap .floor_pan_image .swiper-wrapper {
+  
+    align-items: center;
+ 
+}
+.floor_plan .floor_plan_wrap .floor_pan_image img {
+    width: 80%;
+    /* height: 100%; */
+}
+.floor_plan .swiper-pagination-bullet-active {
+    background-color: #CDA782;
+}
 
 /* .premiun  */
 .premiun .item_wrap .item {
@@ -754,6 +854,10 @@ div.intro .emailup-info p {
     html {font-size: 50%;}
     .main_visual {height: 56vw;}
     .main_visual #vimeoPlayer {min-height: 100%;}
+
+    .floor_plan .floor_plan_wrap .floor_pan_image {
+        width: calc(100% - 480px);
+    }
 }
 
 @media screen and (max-width: 960px) {
@@ -772,6 +876,20 @@ div.intro .emailup-info p {
     .form_wrap .form-title {width: auto;}
     .form_wrap .form .btn_wrap {justify-content: space-between; gap: 10px;}
     .form_wrap .form .btn_wrap button {width: calc(100% / 2); padding: 0;}
+
+
+    /* 평면도 */
+    .floor_plan_wrap {align-items: flex-end;}
+    .floor_plan_wrap .floor_info {width: 230px;}
+    .floor_plan .floor_plan_title {display: block;}
+    .floor_plan .floor_plan_title p {margin-left: 0;}
+
+    .floor_plan .floor_plan_wrap .floor {row-gap: 20px;}
+    .floor_plan .floor_plan_wrap .floor ul {flex-direction: column;}
+    .floor_plan .floor_plan_wrap .floor ul li {font-size: 16px;}
+
+    .floor_plan .floor_plan_wrap .floor_pan_image {width: calc(100% - 250px);}
+
 
 }
 
@@ -822,6 +940,23 @@ div.intro .emailup-info p {
     div.intro .emailup-info p {
         font-size: 20px;
     }
+
+
+
+    /* 평면도 */
+    .floor_plan .floor_plan_title {display: flex;}
+    .floor_plan .floor_plan_title h4 {font-size: 60px;}
+    .floor_plan .floor_plan_title p {font-size: 20px; margin-left: 16px;}
+    .floor_plan_wrap {display: block; margin-top: 24px;}
+    
+    .floor_plan_wrap .floor_info {width: 100%;  }
+    .floor_plan .floor_plan_wrap .floor {flex-direction: row; flex-wrap: wrap; margin-top: 24px;}
+    .floor_plan .floor_plan_wrap .floor ul {width: calc(100% / 3); border-bottom: 0;}
+    .floor_plan .floor_plan_wrap .floor ul li {font-size: ;}
+    .floor_plan .floor_plan_wrap .floor ul li strong {display: block;}
+
+     
+    .floor_plan .floor_plan_wrap .floor_pan_image {width: 100%;}
 
    
 }
