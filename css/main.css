@@ -950,13 +950,14 @@ div.intro .emailup-info p {
     .floor_plan_wrap {display: block; margin-top: 24px;}
     
     .floor_plan_wrap .floor_info {width: 100%;  }
-    .floor_plan .floor_plan_wrap .floor {flex-direction: row; flex-wrap: wrap; margin-top: 24px;}
+    .floor_plan .floor_plan_wrap .floor {flex-direction: row; flex-wrap: wrap; margin-top: 24px; row-gap: 8px;}
     .floor_plan .floor_plan_wrap .floor ul {width: calc(100% / 3); border-bottom: 0;}
     .floor_plan .floor_plan_wrap .floor ul li {font-size: ;}
     .floor_plan .floor_plan_wrap .floor ul li strong {display: block;}
 
      
     .floor_plan .floor_plan_wrap .floor_pan_image {width: 100%;}
+    .floor_plan .floor_plan_wrap .floor_pan_image img {width: 90%;}
 
    
 }
