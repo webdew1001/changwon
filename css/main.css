@@ -728,10 +728,7 @@ div.intro .emailup-info p {
 .mail_send_bottom .form .btn_wrap {
     margin-top: 8rem;
 }
-.intro img {
-    /* width: 100%;
-    min-height: 320px; */ 
-}
+ 
 
 .footer {
     padding: 8rem 0;
@@ -740,9 +737,7 @@ div.intro .emailup-info p {
     font-size: 16px;
     font-weight: 300;
 }
-.footer .inner {
-
-}
+ 
 
 .footer .inner .footer_menu {
     display: flex;
@@ -896,7 +891,7 @@ div.intro .emailup-info p {
 @media screen and (max-width: 640px) {
     html {font-size: 37.5%;}
 
-    .section .title h3 {font-size: 18px;}
+    .section .title h3 {font-size: 28px;}
     .section .title p {font-size: 16px; margin-top: 4px; line-height: 1.3;}
 
     .form_wrap .inner {width: 100%; flex-direction: column; margin: 0;}
@@ -945,7 +940,7 @@ div.intro .emailup-info p {
 
     /* 평면도 */
     .floor_plan .floor_plan_title {display: flex;}
-    .floor_plan .floor_plan_title h4 {font-size: 60px;}
+    .floor_plan .floor_plan_title h4 {font-size: 48px;}
     .floor_plan .floor_plan_title p {font-size: 20px; margin-left: 16px;}
     .floor_plan_wrap {display: block; margin-top: 24px;}
     
