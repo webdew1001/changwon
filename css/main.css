@@ -182,13 +182,18 @@ body.scroll {
 }
 
 /* 2025.05.15 */
+div.intro {
+    border-bottom: 1px solid #ccc;
+}
 .form_wrap .inner {
     margin: 200px auto 200px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
 }
-
+.form_wrap .inner p {
+    
+}
 .form_wrap .form-title{
     width: 329px;
     position: sticky;
