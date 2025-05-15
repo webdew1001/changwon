@@ -180,6 +180,8 @@ body.scroll {
     /* min-width: 177.78vh; */ /* 16:9 비율 유지 */
     transform: translate(-50%, -50%);
 }
+
+/* 2025.05.15 */
 .form_wrap .inner {
     margin: 200px auto 200px;
     display: flex;
